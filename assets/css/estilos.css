@@ -1,0 +1,137 @@
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    width: 95%;
+    padding: 30px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.barra-busqueda {
+    width: 100%;
+    height: 40%;
+    line-height: 30px;
+    background: #fff;
+    padding: 0 20px;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.categorias {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}   
+
+.categorias a {
+    color: #9b9b9b;
+    margin: 10px 20px;
+    font-size: 20px;
+}
+
+.categorias a.activo {
+    color: #000;
+    font-weight: bold;
+}
+
+.grid {
+    position: relative;
+    width: 100%;
+    background: #dfdede;
+    opacity: 0;
+    transition: opacity 0.5s linear 1s;
+}
+
+.grid.imagenes-cargadas {
+    opacity: 1;
+}
+
+.grid .item-contenido {
+    position: relative;
+}
+
+.grid .item {
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 10px;
+    width: calc(33.333333% - 20px);
+}
+
+.image:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.grid .item img {
+    width: 90%;
+}
+
+/* overlay */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.9);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.contenedor-caracteristicas {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.overlay.activo {
+    display: flex;
+}
+
+.overlay img {
+    max-width: 100%;
+}
+
+.overlay .contenedor-caracteristicas {
+    display: block;
+    background: #fff;
+    padding: 20px;
+    margin-top: 5px;
+    border-radius: 10px;
+
+}
+
+.contenedor-caracteristicas .nombre{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.contenedor-caracteristicas .precio{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.contenedor-img {
+    position: relative;
+}
+
+.overlay #btn-cerrar-popup {
+    position: absolute;
+    right: 20px;
+    top: -40px;
+}
+

@@ -9,7 +9,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable=no">
     <title>buyhome</title>
-    <link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/estilos.css">
 </head>
 	<body>
 
@@ -20,76 +21,351 @@
 						<h1>BUYHOME</h1>
 						<h2>Todo para tu hogar
 						</h2>
-						<a href="#" class="button big alt"><span>Inicio</span></a>
+						<a href="#" class="button big alt" id="inicio"><span>Inicio</span></a>
 					</div>
 					<a href="#" class="button hidden"><span>Inicio</span></a>
 				</div>
+
 			</header>
 
 		<!-- Main -->
 			<div id="main">
-				<div class="inner">
-					<div class="columns">
-
-						<!-- Column 1 (horizontal, vertical, horizontal, vertical) -->
-							<div class="image fit">
-								<a href="detail1.html"><img src="https://alti.com./ec1554-large_default/REM-S8599.jpg" alt="" /></a>
-							</div>
-							<div class="image fit">
-								<a href="detail1.html"><img src="images/pic02.jpg" alt="" /></a>
-							</div>
-							<div class="image fit">
-								<a href="detail1.html"><img src="images/pic03.jpg" alt="" /></a>
-							</div>
-							<div class="image fit">
-								<a href="detail1.html"><img src="images/pic04.jpg" alt="" /></a>
-							</div>
-
-						<!-- Column 2 (vertical, horizontal, vertical, horizontal) -->
-							<div class="image fit">
-								<a href="detail1.html"><img src="images/pic06.jpg" alt="" /></a>
-							</div>
-							<div class="image fit">
-								<a href="detail1.html"><img src="images/pic05.jpg" alt="" /></a>
-							</div>
-							<div class="image fit">
-								<a href="detail1.html"><img src="images/pic08.jpg" alt="" /></a>
-							</div>
-							<div class="image fit">
-								<a href="detail1.html"><img src="images/pic07.jpg" alt="" /></a>
-							</div>
-
-						<!-- Column 3 (horizontal, vertical, horizontal, vertical) -->
-							<div class="image fit">
-								<a href="detail1.html"><img src="images/pic09.jpg" alt="" /></a>
-							</div>
-							<div class="image fit">
-								<a href="detail1.html"><img src="images/pic12.jpg" alt="" /></a>
-							</div>
-							<div class="image fit">
-								<a href="detail1.html"><img src="images/pic11.jpg" alt="" /></a>
-							</div>
-							<div class="image fit">
-								<a href="detail1.html"><img src="images/pic10.jpg" alt="" /></a>
-							</div>
-
-						<!-- Column 4 (vertical, horizontal, vertical, horizontal) -->
-							<div class="image fit">
-								<a href="detail1.html"><img src="images/pic13.jpg" alt="" /></a>
-							</div>
-							<div class="image fit">
-								<a href="detail1.html"><img src="images/pic14.jpg" alt="" /></a>
-							</div>
-							<div class="image fit">
-								<a href="detail1.html"><img src="images/pic15.jpg" alt="" /></a>
-							</div>
-							<div class="image fit">
-								<a href="detail1.html"><img src="images/pic16.jpg" alt="" /></a>
-							</div>
-
+				<div class="contenedor">
+					<div>
+						<form action="">
+						<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar Artículos">
+						</form>
+					</div>
+					<div class="categorias" id="categorias">
+						<a href="#" class="activo">Ofertas</a>
+						<a href="#">Belleza</a>
+						<a href="#">Electrodomésticos</a>
+						<a href="#">Hogar</a>
+						<a href="#">Tecnología</a>
+						<a href="#">Todos</a>
 					</div>
 				</div>
+				
+				<section class="grid" id="grid">
+					<div class="item"
+					 data-categoria="belleza"
+					 data-etiquetas="secador secadora remington"
+					 data-nombre="Secadora de cabello REMINGTON"
+					 data-precio="$32,00"
+					 data-descripcion1="1875 watts"
+					 data-descripcion2="3 niveles"
+					 data-descripcion3="2 velocidades"
+					 data-descripcion4="Función Eco adicional que ahorra energía durante el secado"
+					 data-colores="Blanco">
+						<div class="item-contenido image fit" >
+							<img src="images/REM-D3015.jpg" alt="" />
+						</div>
+					</div>
+					<div class="item"
+					 data-categoria="belleza"
+					 data-etiquetas="secador secadora remington"
+					 data-nombre="Secadora de cabello REMINGTON de viaje"
+					 data-precio="$25,00"
+					 data-descripcion1="1400 watts"
+					 data-descripcion2="2 velocidades"
+					 data-descripcion3=""
+					 data-descripcion4=""
+					 data-colores="Negro">
+						<div class="item-contenido image fit" >
+							<img src="images/REM-D2400.jpg" alt="" />
+						</div>
+					</div>
+					<div class="item"
+					 data-categoria="belleza"
+					 data-etiquetas="secador secadora aguacate remington"
+					 data-nombre="Secadora de cabello REMINGTON"
+					 data-precio="$59,00"
+					 data-descripcion1="2300 watts"
+					 data-descripcion2="3 niveles"
+					 data-descripcion3="2 velocidades"
+					 data-descripcion4="Libera micro-acondicionadores de aguacate con macadamia"
+					 data-colores="Negro">
+						<div class="item-contenido image fit" >
+							<img src="images/REM-D13A.jpg" alt="" />
+						</div>
+					</div>
+					<div class="item"
+					data-categoria="belleza"
+					data-etiquetas="depilador depiladora vivitar"
+					data-nombre="Depiladora Vivitar"
+					data-precio="$20,00"
+					data-descripcion1="Ideal para vikini"
+					data-descripcion2="Flexible"
+					data-descripcion3="Sin cable"
+					data-descripcion4=""
+					data-colores="Fucsia">
+						<div class="item-contenido image fit" >
+							<img src="images/VIV-PG-V007R.jpg" alt="" />
+						</div>
+					</div>
+					<div class="item"
+					data-categoria="belleza"
+					data-etiquetas="plancha secador combo aguacate remington"
+					data-nombre="Combo Secador y Plancha REMINGTON"
+					data-precio="$99,99"
+					data-descripcion1="Liberan micro-acondicionadores de aguacate y macadamia"
+					data-descripcion2="Revestimiento de ceramica con vitamina E"
+					data-descripcion3=""
+					data-descripcion4=""
+					data-colores="verde claro">
+						<div class="item-contenido image fit" >
+							<img src="images/REM-COMBOSECPLA.jpg" alt="" />
+						</div>
+					</div>
+					<div class="item"
+					data-categoria="belleza"
+					data-etiquetas="secador cabello remington"
+					data-nombre="Secador de cabello REMINGTON prolux"
+					data-precio="$77,00"
+					data-descripcion1="2400 w"
+					data-descripcion2="3 piezas"
+					data-descripcion3=""
+					data-descripcion4=""
+					data-colores="Rose gold">
+						<div class="item-contenido image fit" >
+							<img src="images/REM-AC9140.jpg" alt="" />
+						</div>
+					</div>
+					<div class="item"
+					data-categoria="belleza"
+					data-etiquetas="secador cabello philips"
+					data-nombre="Secador de cabello PHILIPS"
+					data-precio="$36,00"
+					data-descripcion1="6 ajustes de velocidad"
+					data-descripcion2="2300 w"
+					data-descripcion3=""
+					data-descripcion4=""
+					data-colores="Negro">
+						<div class="item-contenido image fit" >
+							<img src="images/PHI-HPS920.png" alt="" />
+						</div>
+					</div>
+					<div class="item"
+					data-categoria="belleza"
+					data-etiquetas="secador cabello philips"
+					data-nombre="Secador de cabello PHILIPS"
+					data-precio="$33,00"
+					data-descripcion1="6 ajustes de velocidad"
+					data-descripcion2="2100 w"
+					data-descripcion3=""
+					data-descripcion4=""
+					data-colores="Negro">
+						<div class="item-contenido image fit" >
+							<img src="images/PHI-HPS910.png" alt="" />
+						</div>
+					</div>
+					<div class="item"
+					data-categoria="belleza"
+					data-etiquetas="rizador cabello conair"
+					data-nombre="Rizador de cabello CONAIR"
+					data-precio="$83,00"
+					data-descripcion1="Cerámica"
+					data-descripcion2="temperatura 204"
+					data-descripcion3=""
+					data-descripcion4=""
+					data-colores="Verde">
+						<div class="item-contenido image fit" >
+							<img src="images/CON-CD213G.jpg" alt="" />
+						</div>
+					</div>
+					<div class="item"
+					data-categoria="belleza"
+					data-etiquetas="rizador cabello remington"
+					data-nombre="Rizador de cabello REMINGTON"
+					data-precio="$39,00"
+					data-descripcion1="Con aguacate y macadamia"
+					data-descripcion2="8 ajustes"
+					data-descripcion3="temperatura 210"
+					data-descripcion4=""
+					data-colores="Verde">
+						<div class="item-contenido image fit" >
+							<img src="images/REM-CI11AF.jpg" alt="" />
+						</div>
+					</div>
+					<div class="item"
+					data-categoria="belleza"
+					data-etiquetas="rizador cabello remington"
+					data-nombre="Rizador de cabello REMINGTON"
+					data-precio="$43,00"
+					data-descripcion1="Dos tamaños de barra"
+					data-descripcion2="temperatura 190"
+					data-descripcion3=""
+					data-descripcion4=""
+					data-colores="Violeta">
+						<div class="item-contenido image fit" >
+							<img src="images/REM-CI63N1.jpg" alt="" />
+						</div>
+					</div>
+					<div class="item"
+					data-ofertas="dia del padre"
+					data-categoria="belleza"
+					data-etiquetas="rasuradora nasal remington"
+					data-nombre="Rasuradora nasal REMINGTON"
+					data-precio="$18,50"
+					data-descripcion1="Use dentro y fuera de la ducha"
+					data-descripcion2="Cuchillas de doble cara"
+					data-descripcion3=""
+					data-descripcion4=""
+					data-colores="Negro">
+						<div class="item-contenido image fit" >
+							<img src="images/REM-NE3250.jpg" alt="" />
+						</div>
+					</div>
+					<div class="item"
+					data-ofertas="dia del padre"
+					data-categoria="belleza"
+					data-etiquetas="afeitadora remington"
+					data-nombre="Afeitadora recargable REMINGTON"
+					data-precio="$38,00"
+					data-descripcion1="Cuchillas de acero quirurgico"
+					data-descripcion2="Dos cabezales"
+					data-descripcion3="Rotativa"
+					data-descripcion4="Inalámbrica"
+					data-colores="Negro">
+						<div class="item-contenido image fit" >
+							<img src="images/REM-R95.jpg" alt="" />
+						</div>
+					</div>
+					<div class="item"
+					data-categoria="belleza"
+					data-etiquetas="plancha cabello remington coco"
+					data-nombre="Plancha de cabello REMINGTON coco"
+					data-precio="$38,00"
+					data-descripcion1="Placas de cerámica"
+					data-descripcion2="Temperatura 230"
+					data-descripcion3="8 ajustes"
+					data-descripcion4="Placas recubiertas de coco"
+					data-colores="Negro">
+						<div class="item-contenido image fit" >
+							<img src="images/REM-S4A500.jpg" alt="" />
+						</div>
+					</div>
+					<div class="item"
+					data-categoria="belleza"
+					data-etiquetas="plancha cabello remington aguacate"
+					data-nombre="Plancha de cabello REMINGTON aguacate"
+					data-precio="$76,00"
+					data-descripcion1="Pantalla digital"
+					data-descripcion2="Temperatura 230"
+					data-descripcion3="Cerámica avanzada"
+					data-descripcion4="Contiene aceite de aguacate y macadamia"
+					data-colores="Negro">
+						<div class="item-contenido image fit" >
+							<img src="images/REM-S12A.jpg" alt="" />
+						</div>
+					</div>
+					<div class="item"
+					data-categoria="belleza"
+					data-etiquetas="plancha cabello remington"
+					data-nombre="Plancha de cabello REMINGTON"
+					data-precio="$27,00"
+					data-descripcion1="Placas de cerámica"
+					data-descripcion2="Temperatura 190"
+					data-descripcion3=""
+					data-descripcion4=""
+					data-colores="Blanco con rosado">
+						<div class="item-contenido image fit" >
+							<img src="images/REM-S1300.jpg" alt="" />
+						</div>
+					</div>
+					<div class="item"
+					data-categoria="belleza"
+					data-etiquetas="plancha cabello remington keratina"
+					data-nombre="Plancha de cabello REMINGTON con keratina"
+					data-precio="$62,00"
+					data-descripcion1="Pantalla digita"
+					data-descripcion2="Temperatura 230"
+					data-descripcion3="Queratin therapy"
+					data-descripcion4=""
+					data-colores="Rosado">
+						<div class="item-contenido image fit" >
+							<img src="images/REM-S8599.jpg" alt="" />
+						</div>
+					</div>
+					<div class="item"
+					data-categoria="belleza"
+					data-etiquetas="plancha cabello remington"
+					data-nombre="Plancha de cabello REMINGTON prolux"
+					data-precio="$79,99"
+					data-descripcion1="Pantalla digital"
+					data-descripcion2="Temperatura 230"
+					data-descripcion3="Placas de cerámica"
+					data-descripcion4=""
+					data-colores="Rosado">
+						<div class="item-contenido image fit" >
+							<img src="images/REM-S9100.jpg " alt="" />
+						</div>
+					</div>
+					<div class="item"
+					data-categoria="belleza"
+					data-etiquetas="plancha cabello remington zafiro"
+					data-nombre="Plancha de cabello REMINGTON zafiro"
+					data-precio="$67,99"
+					data-descripcion1="Pantalla digital"
+					data-descripcion2="Temperatura 235"
+					data-descripcion3="Placas de titanio"
+					data-descripcion4="Antiestática"
+					data-colores="Azul">
+						<div class="item-contenido image fit" >
+							<img src="images/REM-S9510.jpg " alt="" />
+						</div>
+					</div>
+					<div class="item"
+
+					data-categoria="belleza"
+					data-etiquetas="plancha cabello remington zafiro"
+					data-nombre="Plancha de cabello REMINGTON zafiro"
+					data-precio="$67,99"
+					data-descripcion1="Pantalla digital"
+					data-descripcion2="Temperatura 235"
+					data-descripcion3="Placas de titanio"
+					data-descripcion4="Antiestática"
+					data-colores="Azul">
+						<div class="item-contenido image fit" >
+							<img src="images/REM-S9510.jpg " alt="" />
+						</div>
+					</div>
+					<div class="item"
+					data-ofertas="dia del padre"
+					data-categoria="belleza"
+					data-etiquetas="kit viajero remington"
+					data-nombre="Kit viajero REMINGTON"
+					data-precio="$23,00"
+					data-descripcion1="12 piezas"
+					data-descripcion2="A pilas"
+					data-descripcion3=""
+					data-descripcion4=""
+					data-colores="Negro">
+						<div class="item-contenido image fit" >
+							<img src="images/REM-TLG100.jpg" alt="" />
+						</div>
+					</div>
+				</section>
+				<section class="overlay" id="overlay">
+					<div class="contenedor-img">
+						<button id="btn-cerrar-popup">X</button>
+						<img src="" alt="">
+					</div>
+					<div class="contenedor-caracteristicas">
+						<p class="nombre"></p>
+						<p class="precio"></p>
+						<p class="colores"></p>
+						<p class="descripcion1"></p>
+						<p class="descripcion2"></p>
+						<p class="descripcion3"></p>
+						<p class="descripcion4"></p>
+					</div>
+					
+					
+				</section>		
+				
 			</div>
+
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -97,17 +373,17 @@
 				<div class="inner">
 					<div class="content">
 						<h3>Vestibulum hendrerit tortor id gravida</h3>
-						<p>In tempor porttitor nisl non elementum. Nulla ipsum ipsum, feugiat vitae vehicula vitae, imperdiet sed risus. Fusce sed dictum neque, id auctor felis. Praesent luctus sagittis viverra. Nulla erat nibh, fermentum quis enim ac, ultrices euismod augue. Proin ligula nibh, pretium at enim eget, tempor feugiat nulla.</p>
+						<p>Las mejores marcas con los mejores precios en solo lugar BUYHOME.</p>
 					</div>
 					<div class="copyright">
-						<h3>Follow me</h3>
+						<h3>Siguenos</h3>
 						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<!--<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>-->
+							<li><a href="https://m.facebook.com/BuyHome-105309804563463" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://instagram.com/buyhome20/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<!--<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>-->
 						</ul>
-						&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com/">Unsplash</a>.
+						&copy; BUYHOME Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com/">Unsplash</a>.
 					</div>
 				</div>
 			</footer>
@@ -117,6 +393,8 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.0/dist/muuri.min.js"></script>
+			<script src="assets/js/buyhome.js"></script>
 	</body>
 </html>
