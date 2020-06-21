@@ -135,3 +135,19 @@ a {
     top: -40px;
 }
 
+@media screen and (max-width: 736px) {
+
+    .grid .item {
+        width: calc(50% - 20px);
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .grid .item {
+        width: calc(100% - 20px);
+    }
+
+}
+
