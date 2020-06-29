@@ -109,8 +109,8 @@ a {
 .overlay .contenedor-caracteristicas {
     display: block;
     background: #fff;
-    padding: 20px;
-    margin-top: 5px;
+    padding: 10px;
+    margin-top: 1px;
     border-radius: 10px;
 
 }
@@ -141,6 +141,11 @@ a {
         width: calc(50% - 20px);
     }
 
+    /* .overlay.activo {
+        display: block;
+    } */
+
+
 }
 
 @media screen and (max-width: 480px) {
@@ -148,6 +153,11 @@ a {
     .grid .item {
         width: calc(100% - 20px);
     }
+
+    /* .overlay.activo {
+        display: block;
+    } */
+
 
 }
 
