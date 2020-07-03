@@ -41,7 +41,7 @@ a {
 .grid {
     position: relative;
     width: 100%;
-    background: #dfdede;
+    background: #ffffff;
     opacity: 0;
     transition: opacity 0.5s linear 1s;
 }
