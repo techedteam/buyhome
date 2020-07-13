@@ -26,7 +26,7 @@ const grid = new Muuri('.grid', {
       // Agregamos el listener para la barra de busqueda
 
       document.querySelector('#barra-busqueda').addEventListener('input', (evento) => {
-          const busqueda = evento.target.value;
+          const busqueda = evento.target.value.toLowerCase();
           grid.filter( (item) => item.getElement().dataset.etiquetas.includes(busqueda) );
       });
 

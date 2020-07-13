@@ -137,13 +137,34 @@ h3.nombre {
 }
 
 .contenedor-img {
-    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
-.overlay #btn-cerrar-popup {
+.float-button {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: url(./../../images/Whatsapp50.png);
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 200;
+}
+
+.contenedor-img #btn-cerrar-popup {
     position: absolute;
-    right: 20px;
-    top: -40px;
+    top: 0;
+    left: 20rem;
+    text-align: center;
+    
+
+}
+
+button {
+    text-align: center;
 }
 
 @media screen and (max-width: 736px) {
@@ -165,9 +186,25 @@ h3.nombre {
         width: calc(100% - 20px);
     }
 
-    /* .overlay.activo {
+    .overlay.activo {
         display: block;
-    } */
+    }
+
+    .overlay #btn-cerrar-popup {
+        /* position: absolute; */
+        right: 20px;
+        top: 40px;
+        padding: 10px 10px;
+        text-align: center;
+    }
+
+    .contenedor-img {
+        width: calc(25% - 20px);
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        /* width: calc(25% - 20px); */
+    }
 
 
 }
