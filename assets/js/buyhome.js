@@ -18,7 +18,7 @@ const grid = new Muuri('.grid', {
               evento.target.classList.add('activo');
 
               const categoria=evento.target.innerHTML.toLowerCase();
-              categoria === 'ofertas' ? grid.filter('[data-ofertas]') : categoria === 'todos' ? grid.filter('[data-categoria]') : grid.filter(`[data-categoria="${categoria}"]`);
+              categoria === 'ofertas' ? grid.filter('[data-ofertas]') : grid.filter(`[data-categoria="${categoria}"]`);
           });
       });
 
